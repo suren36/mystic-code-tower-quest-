@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floor {
+  display: flex;
+  margin: 10px 0;
+}
+
+.floor.active {
+  border: 2px solid blue;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.box.gem {
+  background-color: green;
+  color: white;
+}
+
+.box.bomb {
+  background-color: red;
+  color: white;
+}
+
+.box:hover {
+  background-color: lightgray;
+}
+
+.controls button {
+  margin: 0 5px;
+  padding: 10px 20px;
+}
+
+/* for death popup */
