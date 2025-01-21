@@ -7,7 +7,7 @@ const GameBoard = ({ gameState, setGameState }) => {
 
     const selectedContent = gameState.floors[floorIndex][boxIndex];
     if (selectedContent === "bomb") {
-      setGameState({ ...gameState, gameOver: true });
+      setGameState({ ...gameState, gameOver: true }); // Game over
     } else {
       setGameState({
         ...gameState,
